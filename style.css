@@ -29,17 +29,23 @@ section {
 
 /*Classes*/
 
-@media only screen and (max-width: 850px) {
-    
+img.images {
+    min-width: 50px;
+    max-width: 325px;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 700px) {
     h1 {
         font-size: 2.5em;
     }
     h2 {
         font-size: 1.25em;
     }
-
     img.images {
-      width: 120px;
+      width: 90px;
       height: auto;
     }
     #download {
@@ -50,11 +56,113 @@ section {
     }
   }
 
-img.images {
-    min-width: 100px;
-    max-width: 400px;
-    height: auto;
+  @media only screen and (max-height: 700px) {
+    img.images {
+        width: 90px;
+        height: auto;
+      }
+  }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    img.images {
+        width: 80px;
+        height: auto;
+      }
 }
+
+  @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    img.images {
+        width: 90px;
+        height: auto;
+      }
+
+}
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    img.images {
+        width: 90px;
+        height: auto;
+      }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      img.images {
+          width: 180px;
+          height: auto;
+      }
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    img.images {
+        width: 100px;
+        height: auto;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    img.images {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    img.images {
+        width: 210px;
+        height: auto;
+    }
+}
+
+
+  /* @media only screen and (max-height: 800px) {
+    img.images {
+      width: 180px;
+      height: auto;
+    }
+} */
+
+/* @media only screen and (max-height: 500px) {
+    img.images {
+      width: 90px;
+      height: auto;
+    }
+} */
+
+/* @media only screen and (max-width: 1400px) {
+    img.images {
+      width: 325px;
+      height: auto;
+    }
+} */
+
 
 .row {
     height: inherit;
@@ -110,6 +218,6 @@ a, a:visited, a:active{
 }
 
 #download {
-    max-width: 230px; 
+    max-width: 150px; 
     height: auto;
 }
