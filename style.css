@@ -9,14 +9,14 @@ body, html, .screen {
 }  
 
 h1  {
-    font-size: 4em;
+    font-size: 3em;
     text-transform: uppercase;
     margin: 0;
 }
 
 h2 {
-    margin-bottom: 1em;
-    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
 }
 
 section { 
@@ -30,9 +30,20 @@ section {
 /*Classes*/
 
 @media only screen and (max-width: 850px) {
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
+
     img.images {
-      width: 150px;
+      width: 120px;
       height: auto;
+    }
+    #download {
+        width: 120px;
     }
     #app {
         width: 65px;
@@ -40,7 +51,7 @@ section {
   }
 
 img.images {
-    min-width: 150px;
+    min-width: 100px;
     max-width: 400px;
     height: auto;
 }
@@ -96,4 +107,9 @@ a, a:visited, a:active{
     border-bottom-right-radius: 22%; 
     border-bottom-left-radius: 22%;
     overflow: hidden; 
+}
+
+#download {
+    max-width: 230px; 
+    height: auto;
 }
