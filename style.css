@@ -31,7 +31,7 @@ section {
 
 img.images {
     max-width: 325px;
-    height: auto;
+    max-height: 600px;
 }
 
 .row {
@@ -44,8 +44,15 @@ img.images {
     text-align: center;
 }
 
-.homeText {
+.downloadContainer {
     font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pad {
+    padding: 10px;
 }
 
 /* Links */
@@ -68,14 +75,6 @@ a, a:visited, a:active{
     background-color: #2C2F33;
 }
 
-#bottom {
-    position: absolute;
-    width: inherit;
-    display: flex;
-    justify-content: center;
-    bottom: 15px;
-}
-
 #app {
     max-width: 100px; 
     height: auto; 
@@ -84,11 +83,6 @@ a, a:visited, a:active{
     border-bottom-right-radius: 22%; 
     border-bottom-left-radius: 22%;
     overflow: hidden; 
-}
-
-#download {
-    max-width: 150px; 
-    height: auto;
 }
 
 /*  Media Sizes */
@@ -112,9 +106,6 @@ a, a:visited, a:active{
     img.images {
       width: 90px;
       height: auto;
-    }
-    #download {
-        width: 120px;
     }
     #app {
         width: 65px;
